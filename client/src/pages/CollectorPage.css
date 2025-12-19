@@ -1,0 +1,150 @@
+/* CollectorPage.css */
+
+.collector-page {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+.collector-header {
+    background-color: #2f2f2f;
+    margin-bottom: 40px;
+}
+
+.collector-banner {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, #6b00ff 0%, #a259ff 50%, #6b00ff 100%);
+    position: relative;
+}
+
+.collector-info-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    position: relative;
+    margin-top: -60px;
+    z-index: 10;
+}
+
+.collector-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.collector-name {
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.collector-stats {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-value {
+    color: #a259ff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.stat-label {
+    color: #aaa;
+    margin: 0;
+}
+
+.collector-bio {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.collector-actions {
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+}
+
+.collector-tabs-container {
+    padding: 0 40px;
+    border-bottom: 1px solid #555;
+    margin-bottom: 40px;
+}
+
+.collector-nfts {
+    padding: 0 40px;
+}
+
+.nft-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.nft-grid-item {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .collector-info-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .collector-actions {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .edit-button {
+        flex: 1;
+    }
+
+    .nft-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .collector-info-container {
+        padding: 24px;
+        margin-top: -40px;
+    }
+
+    .collector-stats {
+        gap: 24px;
+    }
+
+    .collector-tabs-container {
+        padding: 0 24px;
+    }
+
+    .collector-nfts {
+        padding: 0 24px;
+    }
+
+    .nft-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 16px;
+    }
+
+    .collector-banner {
+        height: 200px;
+    }
+
+    .collector-avatar {
+        width: 80px;
+        height: 80px;
+    }
+}

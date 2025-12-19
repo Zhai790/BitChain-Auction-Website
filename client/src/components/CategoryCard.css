@@ -1,0 +1,30 @@
+.category-card {
+    width: 260px;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.category-card:hover {
+    box-shadow: 0 4px 20px #9a54f4;
+}
+
+.category-top {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #A259FF, #377DF7);
+}
+
+.category-footer {
+    background: #333333;
+    padding: 14px 16px;
+}
+
+.category-title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #fff;
+}

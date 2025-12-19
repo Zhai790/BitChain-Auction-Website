@@ -1,0 +1,132 @@
+.navbar {
+    background-color: #2b2b2b;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar-logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: none;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    font-size: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar-right-desktop {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-hamburger {
+    display: none;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.navbar-links a {
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 0.95;
+    transition: opacity 120ms ease;
+}
+
+.navbar-links a:hover {
+    opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-right {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #2b2b2b;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .mobile-menu a,
+    .mobile-menu button {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        background: none;
+        border: none;
+        text-align: left;
+        font-weight: 600;
+        padding: 0;
+    }
+}
+
+
+.user-icon-button:hover {
+    background-color: rgba(162, 89, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.user-menu {
+    margin-top: 8px;
+}
+
+.user-menu .MuiPaper-root {
+    background-color: #2f2f2f;
+    border: 1px solid #555;
+}
+
+.user-menu .MuiMenuItem-root {
+    color: #ffffff;
+    font-size: 14px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-menu .MuiMenuItem-root:hover {
+    background-color: rgba(162, 89, 255, 0.15);
+}
+
+.user-menu .MuiMenuItem-root .MuiSvgIcon-root {
+    font-size: 20px;
+}

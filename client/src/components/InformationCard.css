@@ -1,0 +1,21 @@
+.info-card {
+    width: 250px;
+    color: #fff;
+}
+
+.info-card:hover {
+    box-shadow: 0 4px 20px #9a54f4;
+}
+
+
+.info-card-top {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card-title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}

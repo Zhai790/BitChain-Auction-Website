@@ -1,0 +1,202 @@
+.login-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 32px;
+    padding: 40px;
+    background-color: #1a1a1a;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 420px;
+    background-color: #2f2f2f;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.login-art {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 520px;
+    max-height: calc(100vh - 120px);
+}
+
+.login-art .nft-card {
+    width: 100%;
+    max-width: 520px;
+    max-height: calc(100vh - 160px);
+    box-shadow: none;
+    overflow: hidden;
+}
+
+.login-form .MuiInputLabel-root {
+    color: #aaa;
+}
+
+.login-form .MuiOutlinedInput-root input {
+    color: white;
+}
+
+.login-form .MuiOutlinedInput-root fieldset {
+    border-color: #555;
+}
+
+.login-form .MuiOutlinedInput-root:hover fieldset {
+    border-color: #a259ff;
+}
+
+.login-form .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: #a259ff;
+}
+
+.login-form .MuiTypography-root {
+    color: #ffffff;
+}
+
+.login-form .MuiOutlinedInput-root fieldset {
+    border-radius: 999px;
+}
+
+.login-form .MuiOutlinedInput-root .MuiOutlinedInput-input {
+    padding: 12px 16px;
+    font-size: 16px;
+}
+
+.login-form .MuiOutlinedInput-root .MuiSvgIcon-root {
+    color: #aaa;
+}
+
+.login-form .MuiButton-contained,
+.login-form .create-account,
+.login-form .login-button {
+    border-radius: 999px;
+    padding: 12px 18px;
+}
+
+.login-form .MuiOutlinedInput-root {
+    background-color: transparent;
+}
+
+.login-form .MuiOutlinedInput-root .MuiOutlinedInput-input {
+    color: #fff;
+}
+
+.login-form .MuiInputLabel-root {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.login-art .nft-card-content {
+    display: none;
+}
+
+.login-art .nft-image {
+    width: 100%;
+    height: auto;
+    max-height: 68vh;
+    object-fit: cover;
+}
+
+.login-form h1.MuiTypography-root {
+    margin: 0 0 8px 0;
+}
+
+.login-form .create-account {
+    background-color: rgba(162, 89, 255, 0.95);
+}
+
+.login-form .login-button {
+    background-color: rgba(162, 89, 255, 0.8);
+}
+
+.login-form .MuiButton-contained {
+    background-color: #a259ff;
+}
+
+.login-form .MuiButton-contained:hover {
+    background-color: #8f45e3;
+}
+
+
+@media (max-width: 1024px) {
+    .login-page {
+        padding: 32px 24px;
+        gap: 24px;
+    }
+
+    .login-form {
+        max-width: 380px;
+        padding: 32px 24px;
+    }
+
+    .login-art .nft-card {
+        max-height: calc(100vh - 200px);
+    }
+}
+
+@media (max-width: 768px) {
+    .login-page {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        padding: 24px 16px;
+    }
+
+    .login-form {
+        width: 100%;
+        max-width: 500px;
+        padding: 24px 20px;
+    }
+
+    .login-art {
+        order: -1; 
+        max-width: 100%;
+        max-height: 280px;
+    }
+
+    .login-art .nft-card {
+        max-width: 100%;
+        max-height: 260px;
+    }
+
+    .login-art .nft-image {
+        max-height: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-page {
+        padding: 16px 12px;
+        gap: 16px;
+    }
+
+    .login-form {
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+
+    .login-form .MuiOutlinedInput-root .MuiOutlinedInput-input {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .login-form h1.MuiTypography-root {
+        font-size: 20px;
+    }
+
+    .login-art {
+        max-height: 200px;
+    }
+
+    .login-art .nft-image {
+        max-height: 220px;
+    }
+}

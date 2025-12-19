@@ -1,0 +1,138 @@
+
+.create-nft-page {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+/* Banner Section */
+.create-nft-banner {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, #6b00ff 0%, #a259ff 50%, #6b00ff 100%);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Content Section */
+.create-nft-content {
+    background-color: #2f2f2f;
+    margin: -50px 24px 0 24px;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 10;
+}
+
+.create-nft-title {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+/* NFT Upload Section */
+.nft-upload-section {
+    margin-bottom: 40px;
+}
+
+.nft-upload-box {
+    display: block;
+    width: 100%;
+    height: 220px;
+    background-color: #1a1a1a;
+    border: 2px dashed #555;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease;
+    position: relative;
+}
+
+.nft-upload-box:hover {
+    border-color: #a259ff;
+    background-color: rgba(162, 89, 255, 0.05);
+}
+
+.upload-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nft-image-preview {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+/* Form Fields */
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.required {
+    color: #a259ff;
+}
+
+.form-field-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.form-field-wrapper.description {
+    align-items: flex-start;
+}
+
+.form-input {
+    flex: 1;
+}
+
+.form-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #555;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .create-nft-content {
+        margin: -50px 16px 0 16px;
+        padding: 24px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .create-button,
+    .cancel-button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,118 @@
+
+.edit-profile-page {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+.edit-profile-banner-container {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.edit-profile-banner {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, #6b00ff 0%, #a259ff 50%, #6b00ff 100%);
+    position: relative;
+}
+
+.edit-profile-actions {
+    display: flex;
+    gap: 12px;
+    padding: 0 24px;
+    margin: -30px 0 40px 0;
+    position: relative;
+    z-index: 5;
+}
+
+/* Content Section */
+.edit-profile-content {
+    background-color: #2f2f2f;
+    margin: 0 40px;
+    padding: 40px;
+    border-radius: 12px;
+    position: relative;
+    margin-top: -60px;
+}
+
+/* Avatar Section */
+.edit-profile-avatar-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+
+/* Form */
+.edit-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 600px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-field-wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+
+
+.form-field-wrapper.biography {
+    align-items: flex-end;
+}
+
+.profile-input {
+    flex: 1;
+}
+
+
+.biography-button {
+    margin-top: auto;
+}
+
+
+@media (max-width: 768px) {
+    .edit-profile-content {
+        margin: 0 20px;
+        padding: 20px;
+        margin-top: -50px;
+    }
+
+    .edit-profile-form {
+        gap: 24px;
+    }
+
+    .form-field-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-field-wrapper.biography {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .edit-profile-banner {
+        height: 200px;
+    }
+
+    .edit-profile-content {
+        margin: 0 16px;
+        padding: 16px;
+        border-radius: 8px;
+    }
+}
