@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["es2020"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "alwaysStrict": true,
+    "sourceMap": true,
+    "strict": true,
+    "module": "CommonJS",
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "noUncheckedIndexedAccess": false,
+    "useUnknownInCatchVariables": false,
+    "outDir": "./build",
+    "rootDir": "src"
+  },
+  "include": ["src/**/*"]
+}
